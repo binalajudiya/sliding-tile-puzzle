@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     width: 500px;
-    height: 500px;
+    // height: 500px;
     padding: 35px;
     font-size: 0;
     background-image: url("@/assets/images/box.png");
@@ -47,7 +47,7 @@
     .point {
       width: 200px;
       height: 140px;
-      padding: 16px 14px 16px 16px;
+      padding: 14px 14px 16px 16px;
       background-image: url("@/assets/images/box.png");
       background-size: 100% 100%;
     }
