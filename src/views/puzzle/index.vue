@@ -33,11 +33,11 @@ import Puzzle from "@/utils/puzzle"
 let games = reactive(Puzzle)
 const { gameImg, randomData, level, isStart } = toRefs(games)
 
-// 鼠标移动图片
+// Mouse move picture
 const handleMove = (index: number) => {
   games.move(index)
 }
-// 键盘事件
+// Keyboard events
 const handleKeyDown = (e: any) => {
   if (!isStart.value) return
   games.onKeydown(e.keyCode)
