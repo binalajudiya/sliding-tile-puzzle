@@ -1,5 +1,10 @@
 .container {
   display: flex;
+
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+  }
+
   .stage {
     flex: 0 0 500px;
     display: flex;
@@ -13,6 +18,12 @@
     background-image: url("@/assets/images/box.png");
     background-size: 100% 100%;
     overflow: hidden;
+
+    @media screen and (max-width: 768px){
+      flex: 0 0 100%;
+      width: 100%;
+    }
+      
     .game-name {
       letter-spacing: 8px;
       font-size: 40px;
@@ -45,12 +56,20 @@
   .other {
     width: 200px;
     margin-left: 20px;
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+      margin-left: 0;
+    }
+
     .point {
       width: 200px;
       height: 140px;
       padding: 14px 14px 16px 16px;
       background-image: url("@/assets/images/box.png");
       background-size: 100% 100%;
+
+      
     }
     .control {
       margin-top: 20px;
