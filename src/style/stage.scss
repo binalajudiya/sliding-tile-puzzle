@@ -3,6 +3,7 @@
 
   @media screen and (max-width: 768px){
     flex-direction: column;
+    padding: 0 10px;
   }
 
   .stage {
@@ -69,7 +70,12 @@
       background-image: url("@/assets/images/box.png");
       background-size: 100% 100%;
 
-      
+      @media screen and (max-width: 768px){
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+        
+      }
     }
     .control {
       margin-top: 20px;
