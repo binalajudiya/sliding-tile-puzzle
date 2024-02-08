@@ -11,6 +11,10 @@ body {
   margin: 0;
   background-image: url("@/assets/images/bg.jpg");
   background-size: 100% 100%;
+
+  @media screen and (max-width: 768px){
+    height: auto;
+  }
 }
 
 label {
@@ -20,6 +24,9 @@ label {
 html {
   height: 100%;
   box-sizing: border-box;
+  @media screen and (max-width: 768px){
+    height: auto;
+  }
 }
 
 #app {
@@ -28,6 +35,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  @media screen and (max-width: 768px){
+    height: auto;
+  }
 }
 
 *,
